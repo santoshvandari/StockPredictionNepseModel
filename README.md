@@ -1,1 +1,1 @@
-# StockPredictionNepseModel
+# Stock Prediction Nepse Model

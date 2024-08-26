@@ -26,7 +26,7 @@ with open('NepseData.csv', 'w', newline='') as csvfile:
     for i in range(len(nepseindexvalue)):
         # date = datetime.datetime.utcfromtimestamp(nepsetime[i]).strftime('%Y-%m-%d')
         date = datetime.datetime.fromtimestamp(nepsetime[i]).strftime('%Y-%m-%d')
-        print("Time : " + date + " Value : " + str(nepseindexvalue[i]))
+        print("Time : " + date + " NepseIndex : " + str(nepseindexvalue[i]))
         writer.writerow([date, nepseindexvalue[i]])
 
 print("Data has been successfully written to NepseData.csv")

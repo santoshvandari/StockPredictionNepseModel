@@ -1,5 +1,5 @@
 /venv
-/*.py
-/*.ipynb
-/*.pkl
+# /*.py
+# /*.ipynb
+# /*.pkl
 /NepseData.xlsx

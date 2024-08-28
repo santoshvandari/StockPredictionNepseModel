@@ -11,11 +11,11 @@ import csv
 
 with open('nepsedata.json') as f:
     data = json.load(f)
-    nepseindexvalue=data['o']
+    nepseindexvalue=data['c']
     nepsetime=data['t']
 
 # Open the CSV file for writing
-with open('NepseData.csv', 'w', newline='') as csvfile:
+with open('Filtered.csv', 'w', newline='') as csvfile:
     # Create a CSV writer object
     writer = csv.writer(csvfile)
 

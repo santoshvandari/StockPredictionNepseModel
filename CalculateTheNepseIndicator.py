@@ -26,7 +26,7 @@ def FiltereData(datafile,savefile):
             # print("Time : " + date + " NepseIndex : " + str(nepseindexvalue[i]))
             writer.writerow([date, nepseindexvalue[i]])
 
-    print("Data has been successfully written to Filtered.csv")
+    print(f"Data has been successfully written to {savefile}")
 
 def calculate_technical_indicators(df):
     # Convert the date column to datetime
@@ -65,7 +65,7 @@ def calculate_technical_indicators(df):
     df['MACD'] = df['12_Day_EMA'] - df['26_Day_EMA']
     
     # Calculate True Range and ATR
-    df['TrueRange'] = df['Value'].diff().abs()  # Simplified since we only have closing prices
+    df['TrueRange'] = df['NepseIndex'].diff().abs()  # Simplified since we only have closing prices
     df['ATR'] = calculate_atr(df['TrueRange'], 14)
     
     return df

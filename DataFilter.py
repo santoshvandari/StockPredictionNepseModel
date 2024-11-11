@@ -29,4 +29,4 @@ with open('Filtered.csv', 'w', newline='') as csvfile:
         print("Time : " + date + " NepseIndex : " + str(nepseindexvalue[i]))
         writer.writerow([date, nepseindexvalue[i]])
 
-print("Data has been successfully written to NepseData.csv")
+print("Data has been successfully written to Filtered.csv")
